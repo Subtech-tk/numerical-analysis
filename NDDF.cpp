@@ -50,7 +50,7 @@ void NDDF(Real *x, Real *y, int n, Real xv)
         cout<<"\n";
     }
     cout<<"\n\n\n";     //some line breakes for good output
-    display(DD,x,n);
+    //display(DD,x,n);
     cout<<"\n\n\n";     //some line breakes for good output
     // formula to calculate the y(x)
     Real yv,yvv;
