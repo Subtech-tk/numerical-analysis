@@ -65,8 +65,7 @@ void NDDF(Real *x, Real *y, int n, Real xv)
     cout<<"\nTherefore \n y|(x="<<xv<<") = "<<yv<<"  ans"<<endl;
 }
 
-//void NDDF_main()
-int main()
+void NDDF_main()
 {
     system("cls");
     int n=0;
