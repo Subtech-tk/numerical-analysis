@@ -1,0 +1,6 @@
+#!/bin/bash 
+echo "compiling the codes"
+g++ main.cpp -o Numerical_Analysis_a_0_1
+echo "running the Objest code"
+./Numerical_Analysis_a_0_1
+echo "thank you"

@@ -1,0 +1,22 @@
+
+To Run the program 
+
+go to terminal
+
+change current directory to directory where files are extracted
+
+then type
+
+'bash run.bash'		for linux system
+
+or 
+
+'sh run.sh'		for unix system
+
+without qoutes
+
+then it works.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+To report any bug contact me.
