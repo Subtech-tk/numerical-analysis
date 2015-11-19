@@ -6,8 +6,7 @@ void error()
     cout<<"Someone messed up with me. I don't know what to do. Please guide me.\nOR\nRestart this program.";
 }
 
-//int num_integration()
-int main()
+int num_integration()
 {
 	float a[20],y[20],upl,lol,h,y0,ya=0,yb=0,yc=0,yd=0,ye=0,yf=0,res;
 	int j,n,i,ch;
