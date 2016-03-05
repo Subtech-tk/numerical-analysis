@@ -11,3 +11,5 @@ typedef double Real;
 using namespace std;
 
 // creating the function
+
+// k1=y0+h(x0+y0)
