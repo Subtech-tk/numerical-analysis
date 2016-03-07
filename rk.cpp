@@ -10,9 +10,6 @@ typedef double Real;
 // defining namespace
 using namespace std;
 
-// creating the function
-
-// k1=y0+h(x0+y0)
 /*
 ALGORITHM RUNGE–KUTTA (ƒ, x 0 , y 0 , h, N).
 This algorithm computes the solution of the initial value problem y = ƒ(x, y), y(x 0 ) = y 0
@@ -36,3 +33,8 @@ End
 Stop
 End RUNGE–KUTTA
 */
+
+int main()
+{
+	return 0;
+}
