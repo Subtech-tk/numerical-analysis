@@ -44,6 +44,15 @@ Real fun(Real x,Real y)
     return x+y;    //function defination
 }
 
+void input()
+{
+    //read x[0],y[0],x,h from the user
+    cin>>x[0];  // x[0] initial value
+    cin>>y[0];  // y[0] initial value
+    cin>>xn;    // xn last value of x till which calculation has to be done
+    cin>>h;     // step lenth
+}
+
 Real rk4 ()
 {
     Real k1=h*fun(x[0],y[0]);
