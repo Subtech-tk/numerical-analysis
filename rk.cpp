@@ -1,5 +1,5 @@
 // trying to create runga-kuta method
-
+// Runga_kutta method for 1st order ODE
 // header files
 #include <iostream>
 #include <stdlib.h>
@@ -47,9 +47,9 @@ Real fun(Real x,Real y)
 void input()
 {
     //read x[0],y[0],x,h from the user
-    cin>>x[0];  // x[0] initial value
-    cin>>y[0];  // y[0] initial value
-    cin>>xn;    // xn last value of x till which calculation has to be done
+    cin>>x0;  // x[0] initial value
+    cin>>y0;  // y[0] initial value
+    cin>>xn;    // xn last value of x title which calculation has to be done
     cin>>h;     // step lenth
 }
 
