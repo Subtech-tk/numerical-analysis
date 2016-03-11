@@ -34,10 +34,9 @@ Stop
 End RUNGE–KUTTA
 */
 
-int main()
-{
-	return 0;
-}
+// global variables
+	Real x0,y0,xn,h;
+
 
 Real fun(Real x,Real y)
 {
@@ -60,4 +59,10 @@ Real rk4 ()
     Real k3=h*fun(x[0]+h/2,y[0]+k2/2);
     Real k4=h*fun(x[0]+h,y[0]+k3);
     y[1]=y[0]+(h/6)*(k1+2*k2+2*k3+k4);
+}
+
+int main()
+{
+	input();
+	return 0;
 }
