@@ -52,17 +52,29 @@ void input()
     cin>>h;     // step lenth
 }
 
-Real rk4 ()
+Real rk4 (Real x, Real y)
 {
-    Real k1=h*fun(x[0],y[0]);
-    Real k2=h*fun(x[0]+h/2,y[0]+k1/2);
-    Real k3=h*fun(x[0]+h/2,y[0]+k2/2);
-    Real k4=h*fun(x[0]+h,y[0]+k3);
-    y[1]=y[0]+(h/6)*(k1+2*k2+2*k3+k4);
+    Real k1=h*fun(x,y);
+    Real k2=h*fun(x+h/2,y+k1/2);
+    Real k3=h*fun(x+h/2,y+k2/2);
+    Real k4=h*fun(x+h,y+k3);
+    yy=y+(h/6)*(k1+2*k2+2*k3+k4);
+	return yy;
 }
 
 int main()
 {
 	input();
+	int n=xn/h;
+	Real y[n],x[n];
+	x[0]=x0;
+	y[0]=y0;
+
+	for (int i=1;i<=n;++i)
+	{
+		x[i]=x[i-1]+n;
+		y[i]=rk4(x[i-1],y[i-1]);
+		cout<<x[i]<<" & "<<y[i]<<"\n";
+	}
 	return 0;
 }
