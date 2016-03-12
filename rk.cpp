@@ -41,6 +41,7 @@ End RUNGE–KUTTA
 Real fun(Real x,Real y)
 {
     return 1/(x+y);    //function defination
+	//return x+(y*y);
 }
 
 void input()
@@ -70,15 +71,20 @@ int main()
 {
 	input();
 	int n=(xn-x0)/h;
+	//if(n==0)
+	//{ n++; }
 	Real y[n],x[n];
 	x[0]=x0;
 	y[0]=y0;
-
-	for (int i=1;i<=n;++i)
+	cout<<n<<"\n";
+	int i=0;
+	//for (int i=0;i<n+1;++i)
+	do
 	{
-		x[i]=x[i-1]+n;
-		y[i]=rk4(x[i-1],y[i-1]);
-		cout<<x[i]<<" & "<<y[i]<<"\n";
-	}
+		x[i+1]=x[i]+h;
+		y[i+1]=rk4(x[i],y[i]);
+		cout<<x[i+1]<<" & "<<y[i+1]<<"\n";
+		++i;
+	}while(i<n+1);
 	return 0;
 }
