@@ -51,9 +51,9 @@ void input()
     cin>>x0;  // x[0] initial value
     	cout<<"y0=";
 	cin>>y0;  // y[0] initial value
-    cout<<"xn";
+    cout<<"xn=";
 	cin>>xn;    // xn last value of x title which calculation has to be done
-    cout<<"h";
+    cout<<"h=";
 	cin>>h;     // step lenth
 }
 
@@ -70,7 +70,7 @@ Real rk4 (Real x, Real y)
 int main()
 {
 	input();
-	int n=(xn-x0)/h;
+	int n=(xn-x0)/h; 	//some problem with this equation
 	//if(n==0)
 	//{ n++; }
 	Real y[n],x[n];
